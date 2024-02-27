@@ -6,6 +6,51 @@
 -->
 <!DOCTYPE html>
 <html lang="en">
+	<script type="text/javascript" src="js/bootstrap.js"></script>
+<!--pop-up-box -->
+					<script src="js/jquery.magnific-popup.js" type="text/javascript"></script>
+					<script>
+					$(document).ready(function() {
+					$('.popup-with-zoom-anim').magnificPopup({
+					type: 'inline',
+					fixedContentPos: false,
+					fixedBgPos: true,
+					overflowY: 'auto',
+					closeBtnInside: true,
+					preloader: false,
+					midClick: true,
+					removalDelay: 300,
+					mainClass: 'my-mfp-zoom-in'
+					});
+
+					});
+					</script>
+<!-- //pop-up-box -->
+<script type="application/x-javascript">
+	addEventListener("load", function () {
+		setTimeout(hideURLbar, 0);
+	}, false);
+
+	function hideURLbar() {
+		window.scrollTo(0, 1);
+	}
+</script>
+		<!-- script-for-fade-out -->
+	<script type="text/javascript">
+		$(document).ready(function() {
+		/*
+			var defaults = {
+			containerID: 'toTop', // fading element id
+			containerHoverID: 'toTopHover', // fading element hover id
+			scrollSpeed: 1200,
+			easingType: 'linear' 
+			};
+		*/								
+		$().UItoTop({ easingType: 'easeOutQuart' });
+		});
+	</script>
+	<!-- //script-for-fade-out -->
+	
 <head>
 	<title>Impilo Media Group | Impilo Magazine</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
@@ -16,15 +61,7 @@
 	 Talent Academy, Film, Studio, Online Magazine, Multicast, Broadcast, LiveCast, Projection, Streaming, Podcast,
 	 Coverage, trending, news, article, talkshow, talk-show, talk show, channel, webseries, 
 	Smartphone Compatible web template, Nokia, Samsung, LG, SonyEricsson, Motorola web design" />
-	<script type="application/x-javascript">
-		addEventListener("load", function () {
-			setTimeout(hideURLbar, 0);
-		}, false);
 
-		function hideURLbar() {
-			window.scrollTo(0, 1);
-		}
-	</script>
 	<!--// Meta tag Keywords -->
 	
 	<!-- for banner css files -->
@@ -74,11 +111,11 @@
 	<div class="container">
 
 			
-		<div class="w3_agile_logo">
+		<div class="w3_agile_logo display-flex">
 			
 			<h1>
-				<a href="index.html"><img src="images/IMG_logo.png" style="width:128px;height:128px;"
-					 alt="Impilo" href="index.html">Impilo Digital  Media Group <span>Live broadcast of an interactive Audio-Visual content</span></a> 
+				<a href="index.html"><img src="images/1.png" style="width:128px;height:128px;"
+					 alt="Impilo" href="index.html">Impilo Digital  Media Group </a> 
 			</h1>
 		</div>
 		<div class="agileits_w3layouts_nav">
@@ -142,8 +179,8 @@
 <section class="welcome py-5 my-lg-5 my-3">
 		<h3 class="heading text-center text-capitalize mb-3"> Welcome To Impilo Media Group</h3>
 	<div class="container">
-		<p class="mb-md-5 mb-3 welcome-para"> We believe that it is time for our audience to be part of our content. Our new way of bringing an immersive experience to your click will make you part of the family.
-			From interacting with content to being part of it, the audience has never had a real-world experience of” being there “ without being there physically.</p>
+		<p class="mb-md-5 mb-3 welcome-para"> Impilo is a multimedia production company specializing in providing comprehensive coverage services for online broadcasting, podcasting, live streaming, and fashion show events. <br>Our mission is to deliver captivating and immersive media experiences that engage audiences, showcase creativity, and amplify the voices of our clients in the fashion industry. With a focus on innovation, quality, and client satisfaction, 
+			<span>Impilo aims to become a trusted partner for fashion brands, designers, event organizers, and media outlets seeking to elevate their presence and impact in the digital landscape.</p>
 		<!-- Stats 
 		<div class="stats">
 			<div class="container">
@@ -197,14 +234,12 @@
 						</div>
 						<div class="about-bottom-bottom">
 								<p>Our coverage will come with a series of talkshow podcasts. Each podcast will bring you a web series of both audio and video coverage of interviews,
-									 news, and content. We will provide transcript descriptions of both for our audience to be spoiled for choice.
-									  Our content is also available for download offline to listen to on the go. 
-									  Our talkshow comes as a real live conversation between our guests , hosts and events as an on-going discussion
-									.</p>
-									<h5>inquire for Quote</h5>
+									 news, and content.
+									</p>
+									<h5>inquire for more Info</h5>
 						</div>
 						<div class="read-button">
-						<a href="#news" class="scroll">Read More</a>
+						<a href="#news" class="scroll">Inquire</a>
 						</div>
 					</div>
 				</div>
@@ -220,14 +255,10 @@
 						</div>
 						<div class="about-bottom-bottom">
 							<p>Our multicasting services are a new integrated service for improving your audience experience, 
-								we cast live events both on-premises live and online. We use live projection technology to provide seeing the big picture 
-								experience of life as it happens on big screens. The same content can also be broadcasted live as it
-								 appears on your social media pages and online platforms
-							</p>
-							<h5>Request Quote</h5>
+								we cast live events both on-premises live and online. 
 						</div>
 						<div class="read-button">
-							<a href="#news" class="scroll">Read More</a>
+							<a href="#news" class="scroll">Inquire</a>
 						</div>
 					</div>
 				</div>
@@ -244,9 +275,9 @@
 						<div class="about-bottom-bottom">
 							<p>We take the infographics experience to a whole new level, 
 								from static 2D to adding interactive 3D to bring it to you in a completely gamified yet effective experience.
-								 We can create scenery that fits the environment for simplifying and communicating your brand, service, or product. 
+							
 							</p>
-							<h5>Request Quote</h5>
+							<h5>Inquire</h5>
 						</div>
 						<div class="read-button">
 							<a href="#news" class="scroll">Read More</a>
@@ -266,12 +297,12 @@
 					<div class="about-bottom-bottom">
 						<p>Never has there been a good time to bring visual effects technology to our modern society and business world.
 							 We all grew up enjoying and admiring science fiction movies and literature. Well, the time now we can be practical with it.
-							  We can create visual effects voiceovers behind the narration of your brand, event, or product. 
+							
 							  </p>
-						<h5>Request Quote</h5>
+						<h5>Inquire for more info <i class="fa fa-info-circle" aria-hidden="true"></i></h5>
 					</div>
 					<div class="read-button">
-						<a href="#news" class="scroll">Read More</a>
+						<a href="#news" class="scroll">Inquire</a>
 					</div>
 				</div>
 			</div>
@@ -290,10 +321,10 @@
 									 We believe in sharpening the skills of our emerging artists to be in choreography, the script, other actors and actresses; 
 									 and visually communicating with the camera.
 									</p>
-							<h5>Request Quote</h5>
+							<h5>Inquire for more info</h5>
 						</div>
 						<div class="read-button">
-							<a href="#news" class="scroll">Read More</a>
+							<a href="#news" class="scroll">Inquire</a>
 						</div>
 					
 					</div>
@@ -481,9 +512,12 @@
 			
 			<div class="col-lg-4 service-grid1 text-right">
 				<h4 class="mb-3">Webseries <span>Episodes</span></h4>
-				<p class="mb-5">Our coverage comes exlcusively to you in a series or episodes format, giving you the ability to catch up and go back in a cinematic experience </p>
-				<h4 class="mb-3">Social <span>Engagement</span></h4>
-				<p>Our content is digital , maiking it possible for audience can interact and engage with it through filling of forms, comments, posts, likes or playing games,  </p>
+				<p class="mb-5">Our coverage comes exlcusively to you in a series or episodes format, 
+					giving you the ability to catch up and go back in a cinematic experience </p>
+				<h4 class="mb-3">Social <span>Engagement</span>
+				</h4>
+				<p>Our content is digital , maiking it possible for audience can interact and engage with it through filling of forms, comments, posts, likes or playing games, 
+					 </p>
 			</div>
 		</div>
 	</div>
@@ -522,11 +556,11 @@
 //blog -->
 
 <!-- Team -->
-<section class="Team py-5 align-content-center">
+<section class="Team py-5 ">
 	<div class="text-center icon"> <span><i class="fas fa-chess-queen"></i></span> </div>
 		<h3 class="heading text-center text-capitalize mb-5"> Our Creative Team</h3>
 		<div class="container py-lg-3 align-content-center">
-			<div class="row model-grids align-content-center">
+			<div class="d-flex justify-content-center row model-grids align-content-center">
 				<div class="col-md-3 col-sm-6 model">
 					<img src="images/lihle.png" alt="" class="img-fluid"  width="400" height="400"/>
 					<h4 class="mt-3">Lihle York</h4>
@@ -821,42 +855,7 @@
 						 
 						   </script>
 
-<script type="text/javascript" src="js/bootstrap.js"></script>
-<!--pop-up-box -->
-					<script src="js/jquery.magnific-popup.js" type="text/javascript"></script>
-					<script>
-					$(document).ready(function() {
-					$('.popup-with-zoom-anim').magnificPopup({
-					type: 'inline',
-					fixedContentPos: false,
-					fixedBgPos: true,
-					overflowY: 'auto',
-					closeBtnInside: true,
-					preloader: false,
-					midClick: true,
-					removalDelay: 300,
-					mainClass: 'my-mfp-zoom-in'
-					});
 
-					});
-					</script>
-<!-- //pop-up-box -->
-		<!-- script-for-fade-out -->
-	<script type="text/javascript">
-		$(document).ready(function() {
-		/*
-			var defaults = {
-			containerID: 'toTop', // fading element id
-			containerHoverID: 'toTopHover', // fading element hover id
-			scrollSpeed: 1200,
-			easingType: 'linear' 
-			};
-		*/								
-		$().UItoTop({ easingType: 'easeOutQuart' });
-		});
-	</script>
-	<!-- //script-for-fade-out -->
-	
 
 
 </body>

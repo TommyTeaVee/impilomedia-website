@@ -134,6 +134,9 @@ h1 {
     width: 80%;
     margin: auto;
 }
+.sortable-handler {
+    touch-action: none;
+  }
 
 #m_nav_list {
     list-style: none;
