@@ -54,10 +54,221 @@
 		});
 	</script>
 	<!-- //script-for-fade-out -->
+	<!-- //PopUp-Box-JavaScript -->
+<link rel="stylesheet" href="css/chocolat.css" type="text/css" media="screen">
+<!-- //js -->
+
+								 <!-- start-smoth-scrolling -->
+								 <script type="text/javascript" src="js/move-top.js"></script>
+								 <script type="text/javascript" src="js/easing.js"></script>
+								 <script type="text/javascript">
+									 jQuery(document).ready(function($) {
+										 $(".scroll").click(function(event){		
+											 event.preventDefault();
+											 $('html,body').animate({scrollTop:$(this.hash).offset().top},1000);
+										 });
+									 });
+								 </script>
+								 
+								 <script src="js/jquery.flipster.js"></script>
+						 <script>
+						 <!--
+						 
+							 $(function(){ $(".flipster").flipster({ style: 'carousel', start: 0 }); });
+						 
+						 -->
+						 </script>	
+						 <!-- start-smoth-scrolling -->
+						  <!-- required-js-files-->
+													 <link href="css/owl.carousel.css" rel="stylesheet">
+														 <script src="js/owl.carousel.js"></script>
+															 <script>
+														 $(document).ready(function() {
+														   $("#owl-demo").owlCarousel({
+															 items : 1,
+															 lazyLoad : true,
+															 autoPlay : true,
+															 navigation : false,
+															 navigationText :  false,
+															 pagination : true,
+														   });
+														 });
+														 </script>
+														  <!--//required-js-files-->
+						 <!-- script-for-menu -->
+											 <script>					
+												 $("span.menu").click(function(){
+													 $(".top-nav ul").slideToggle("slow" , function(){
+													 });
+												 });
+											 </script>
+											 <!-- script-for-menu -->
+											 <!---->
+											 <script>
+						 
+							 $(function() {
+							   $('.adsense_btn_close').click(function() {
+								 $(this).closest('.adsense_fixed').css('display', 'none');
+							   });
+						 
+							   $('.adsense_btn_info').click(function() {
+								 if ($('.adsense_info_content').is(':visible')) {
+								   $('.adsense_info_content').css('display', 'none');
+								 } else {
+								   $('.adsense_info_content').css('display', 'block');
+								 }
+							   });
+						 
+							 });
+						 
+						   </script>
+						   <!-- js-scripts -->		
+
+	<!-- js -->
+	<script type="text/javascript" src="js/jquery-2.2.3.min.js"></script>
+	<script type="text/javascript" src="js/bootstrap-3.1.1.min.js"></script> <!-- Necessary-JavaScript-File-For-Bootstrap --> 
+	<!-- //js -->
 	
+	<!-- for banner js file-->
+	<script type="text/javascript" src="js/jquery.zoomslider.min.js"></script><!-- zoomslider js -->
+	<!-- //for banner js file-->
+	
+	<!-- /numscroller -->		
+	<script type="text/javascript" src="js/numscroller-1.0.js"></script>
+	<!-- //numscroller -->	
+	
+	<!--pop-up-box -->
+	<script src="js/jquery.magnific-popup.js"></script>
+	<script>
+		$(document).ready(function () {
+			$('.popup-with-zoom-anim').magnificPopup({
+				type: 'inline',
+				fixedContentPos: false,
+				fixedBgPos: true,
+				overflowY: 'auto',
+				closeBtnInside: true,
+				preloader: false,
+				midClick: true,
+				removalDelay: 300,
+				mainClass: 'my-mfp-zoom-in'
+			});
+		});
+	</script>
+	<!-- //pop-up-box -->
+	
+	<!-- Owl-Carousel-JavaScript -->
+	<script src="js/owl.carousel.js"></script>
+	<script>
+		$(document).ready(function() {
+			$("#owl-demo").owlCarousel ({
+				items : 3,
+				lazyLoad : true,
+				autoPlay : true,
+				pagination : true,
+			});
+		});
+	</script>
+	<!-- //Owl-Carousel-JavaScript -->  
+
+	<!-- navigation  -->
+    <script src="js/main.js"></script>
+    <!-- //navigation -->
+
+	<!-- services FlexSlider -->
+	<script defer src="js/jquery.flexslider.js"></script>
+	<script>
+		$(window).load(function () {
+			$('#carousel').flexslider({
+				animation: "slide",
+				controlNav: false,
+				animationLoop: true,
+				slideshow: false,
+				itemWidth: 102,
+				itemMargin: 5,
+				asNavFor: '#slider'
+			});
+
+			$('#slider').flexslider({
+				animation: "slide",
+				controlNav: false,
+				animationLoop: true,
+				slideshow: true,
+				sync: "#carousel",
+				start: function (slider) {
+					$('body').removeClass('loading');
+				}
+			});
+		});
+	</script>
+	<!-- // services FlexSlider -->
+
+	<!-- start-smoth-scrolling -->
+	<script src="js/SmoothScroll.min.js"></script>
+	<script type="text/javascript" src="js/move-top.js"></script>
+	<script type="text/javascript" src="js/easing.js"></script>
+	<script type="text/javascript">
+		jQuery(document).ready(function($) {
+			$(".scroll").click(function(event){		
+				event.preventDefault();
+				$('html,body').animate({scrollTop:$(this.hash).offset().top},1000);
+			});
+		});
+	</script>
+	<!-- here stars scrolling icon -->
+	<script type="text/javascript">
+		$(document).ready(function() {
+			/*
+				var defaults = {
+				containerID: 'toTop', // fading element id
+				containerHoverID: 'toTopHover', // fading element hover id
+				scrollSpeed: 1200,
+				easingType: 'linear' 
+				};
+			*/
+								
+			$().UItoTop({ easingType: 'easeOutQuart' });
+								
+			});
+	</script>
+	<!-- //here ends scrolling icon -->
+	<!-- start-smoth-scrolling -->
+	
+<!-- //js-scripts -->
+<script src="js/responsiveslides.min.js"></script>
+							<script>
+								// You can also use "$(window).load(function() {"
+								$(function () {
+								  // Slideshow 4
+								  $("#slider3").responsiveSlides({
+									auto: true,
+									pager:false,
+									nav:false,
+									speed: 500,
+									namespace: "callbacks",
+									before: function () {
+									  $('.events').append("<li>before event fired.</li>");
+									},
+									after: function () {
+									  $('.events').append("<li>after event fired.</li>");
+									}
+								  });
+							
+								});
+							 </script>
+							 <!--light-box-files -->
+							<script src="js/modernizr.custom.js"></script>
+							<script src="js/jquery.chocolat.js"></script>
+							 <!-- PopUp-Box-JavaScript -->
+							<script type="text/javascript">
+							$(function() {
+							$('.filtr-item a').Chocolat();
+							});
+							</script>
+
 <head>
 	<title>Impilo Media Group | Impilo Magazine</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta http-equiv="Cache-control" content="public">
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 	<meta name="keywords" content="Impilo, IMPILO,Impilo Magazine, impilo magazine, 
 	Impilo digital magazine, impilo,  
@@ -408,7 +619,7 @@
 				<div class="pop-bg position-relative">
 					<div class="arrow-container animated fadeInDown">
 						<a href="#small-dialog1" class="arrow-2 popup-with-zoom-anim">
-							<img src="images/play-button.png" alt="" />
+							<img src="images/play-button.png" alt="" class="img-responsive"/>
 						</a>
 						<div class="arrow-1 animated hinge infinite zoomIn"></div>
 					</div>
@@ -532,26 +743,26 @@
 					<div id="carousel" class="flexslider">
 						<ul class="slides">
 							<li>
-								<img src="images/5.gif" alt="" />
+								<img src="images/5.gif" alt="" class="img-responsive"/>
 							</li>
 							<li>
-								<img src="images/1.gif" alt="" /> 
+								<img src="images/1.gif" alt="" class="img-responsive"/> 
 							</li>
 							<li>
-								<img src="images/2.gif" alt="" />
+								<img src="images/2.gif" alt="" class="img-responsive"/>
 							</li>
 							<li>
-								<img src="images/3.gif" alt="" />
+								<img src="images/3.gif" alt="" class="img-responsive"/>
 							<li>
-								<img src="images/7.gif" alt="" />
-							</li>
-						
-							<li>
-								<img src="images/6.gif" alt="" />
+								<img src="images/7.gif" alt="" class="img-responsive"/>
 							</li>
 						
 							<li>
-								<img src="images/8.gif" alt="" />
+								<img src="images/6.gif" alt="" class="img-responsive"/>
+							</li>
+						
+							<li>
+								<img src="images/8.gif" alt="" class="img-responsive"/>
 							</li>
 					
 						</ul>
@@ -694,216 +905,7 @@
 <!-- //copyright -->
 
 
-<!-- js-scripts -->		
 
-	<!-- js -->
-	<script type="text/javascript" src="js/jquery-2.2.3.min.js"></script>
-	<script type="text/javascript" src="js/bootstrap.js"></script> <!-- Necessary-JavaScript-File-For-Bootstrap --> 
-	<!-- //js -->
-	
-	<!-- for banner js file-->
-	<script type="text/javascript" src="js/jquery.zoomslider.min.js"></script><!-- zoomslider js -->
-	<!-- //for banner js file-->
-	
-	<!-- /numscroller -->		
-	<script type="text/javascript" src="js/numscroller-1.0.js"></script>
-	<!-- //numscroller -->	
-	
-	<!--pop-up-box -->
-	<script src="js/jquery.magnific-popup.js"></script>
-	<script>
-		$(document).ready(function () {
-			$('.popup-with-zoom-anim').magnificPopup({
-				type: 'inline',
-				fixedContentPos: false,
-				fixedBgPos: true,
-				overflowY: 'auto',
-				closeBtnInside: true,
-				preloader: false,
-				midClick: true,
-				removalDelay: 300,
-				mainClass: 'my-mfp-zoom-in'
-			});
-		});
-	</script>
-	<!-- //pop-up-box -->
-	
-	<!-- Owl-Carousel-JavaScript -->
-	<script src="js/owl.carousel.js"></script>
-	<script>
-		$(document).ready(function() {
-			$("#owl-demo").owlCarousel ({
-				items : 3,
-				lazyLoad : true,
-				autoPlay : true,
-				pagination : true,
-			});
-		});
-	</script>
-	<!-- //Owl-Carousel-JavaScript -->  
-
-	<!-- navigation  -->
-    <script src="js/main.js"></script>
-    <!-- //navigation -->
-
-	<!-- services FlexSlider -->
-	<script defer src="js/jquery.flexslider.js"></script>
-	<script>
-		$(window).load(function () {
-			$('#carousel').flexslider({
-				animation: "slide",
-				controlNav: false,
-				animationLoop: true,
-				slideshow: false,
-				itemWidth: 102,
-				itemMargin: 5,
-				asNavFor: '#slider'
-			});
-
-			$('#slider').flexslider({
-				animation: "slide",
-				controlNav: false,
-				animationLoop: true,
-				slideshow: true,
-				sync: "#carousel",
-				start: function (slider) {
-					$('body').removeClass('loading');
-				}
-			});
-		});
-	</script>
-	<!-- // services FlexSlider -->
-
-	<!-- start-smoth-scrolling -->
-	<script src="js/SmoothScroll.min.js"></script>
-	<script type="text/javascript" src="js/move-top.js"></script>
-	<script type="text/javascript" src="js/easing.js"></script>
-	<script type="text/javascript">
-		jQuery(document).ready(function($) {
-			$(".scroll").click(function(event){		
-				event.preventDefault();
-				$('html,body').animate({scrollTop:$(this.hash).offset().top},1000);
-			});
-		});
-	</script>
-	<!-- here stars scrolling icon -->
-	<script type="text/javascript">
-		$(document).ready(function() {
-			/*
-				var defaults = {
-				containerID: 'toTop', // fading element id
-				containerHoverID: 'toTopHover', // fading element hover id
-				scrollSpeed: 1200,
-				easingType: 'linear' 
-				};
-			*/
-								
-			$().UItoTop({ easingType: 'easeOutQuart' });
-								
-			});
-	</script>
-	<!-- //here ends scrolling icon -->
-	<!-- start-smoth-scrolling -->
-	
-<!-- //js-scripts -->
-<script src="js/responsiveslides.min.js"></script>
-							<script>
-								// You can also use "$(window).load(function() {"
-								$(function () {
-								  // Slideshow 4
-								  $("#slider3").responsiveSlides({
-									auto: true,
-									pager:false,
-									nav:false,
-									speed: 500,
-									namespace: "callbacks",
-									before: function () {
-									  $('.events').append("<li>before event fired.</li>");
-									},
-									after: function () {
-									  $('.events').append("<li>after event fired.</li>");
-									}
-								  });
-							
-								});
-							 </script>
-							 <!--light-box-files -->
-							<script src="js/modernizr.custom.js"></script>
-							<script src="js/jquery.chocolat.js"></script>
-							 <!-- PopUp-Box-JavaScript -->
-							<script type="text/javascript">
-							$(function() {
-							$('.filtr-item a').Chocolat();
-							});
-							</script>
-<!-- //PopUp-Box-JavaScript -->
-<link rel="stylesheet" href="css/chocolat.css" type="text/css" media="screen">
-<!-- //js -->
-
-								 <!-- start-smoth-scrolling -->
-								 <script type="text/javascript" src="js/move-top.js"></script>
-								 <script type="text/javascript" src="js/easing.js"></script>
-								 <script type="text/javascript">
-									 jQuery(document).ready(function($) {
-										 $(".scroll").click(function(event){		
-											 event.preventDefault();
-											 $('html,body').animate({scrollTop:$(this.hash).offset().top},1000);
-										 });
-									 });
-								 </script>
-								 
-								 <script src="js/jquery.flipster.js"></script>
-						 <script>
-						 <!--
-						 
-							 $(function(){ $(".flipster").flipster({ style: 'carousel', start: 0 }); });
-						 
-						 -->
-						 </script>	
-						 <!-- start-smoth-scrolling -->
-						  <!-- required-js-files-->
-													 <link href="css/owl.carousel.css" rel="stylesheet">
-														 <script src="js/owl.carousel.js"></script>
-															 <script>
-														 $(document).ready(function() {
-														   $("#owl-demo").owlCarousel({
-															 items : 1,
-															 lazyLoad : true,
-															 autoPlay : true,
-															 navigation : false,
-															 navigationText :  false,
-															 pagination : true,
-														   });
-														 });
-														 </script>
-														  <!--//required-js-files-->
-						 <!-- script-for-menu -->
-											 <script>					
-												 $("span.menu").click(function(){
-													 $(".top-nav ul").slideToggle("slow" , function(){
-													 });
-												 });
-											 </script>
-											 <!-- script-for-menu -->
-											 <!---->
-											 <script>
-						 
-							 $(function() {
-							   $('.adsense_btn_close').click(function() {
-								 $(this).closest('.adsense_fixed').css('display', 'none');
-							   });
-						 
-							   $('.adsense_btn_info').click(function() {
-								 if ($('.adsense_info_content').is(':visible')) {
-								   $('.adsense_info_content').css('display', 'none');
-								 } else {
-								   $('.adsense_info_content').css('display', 'block');
-								 }
-							   });
-						 
-							 });
-						 
-						   </script>
 
 
 
