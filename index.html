@@ -2,54 +2,7 @@
 
 <!DOCTYPE html>
 <html lang="en">
-	<script  type="text/javascript" src="js/jquery-2.2.3.min.js">
-
-	</script>
-
-	<script type="text/javascript" src="js/bootstrap-3.1.1.min.js"></script>
-
-					<script src="js/jquery.magnific-popup.js" type="text/javascript"></script>
-					<script>
-					$(document).ready(function() {
-					$('.popup-with-zoom-anim').magnificPopup({
-					type: 'inline',
-					fixedContentPos: false,
-					fixedBgPos: true,
-					overflowY: 'auto',
-					closeBtnInside: true,
-					preloader: false,
-					midClick: true,
-					removalDelay: 300,
-					mainClass: 'my-mfp-zoom-in'
-					});
-
-					});
-					</script>
-<!-- //pop-up-box -->
-<script type="application/x-javascript">
-	addEventListener("load", function () {
-		setTimeout(hideURLbar, 0);
-	}, false);
-
-	function hideURLbar() {
-		window.scrollTo(0, 1);
-	}
-</script>
-		<!-- script-for-fade-out -->
-	<script type="text/javascript">
-		$(document).ready(function() {
-		/*
-			var defaults = {
-			containerID: 'toTop', // fading element id
-			containerHoverID: 'toTopHover', // fading element hover id
-			scrollSpeed: 1200,
-			easingType: 'linear' 
-			};
-		*/								
-		$().UItoTop({ easingType: 'easeOutQuart' });
-		});
-	</script>
-	<!-- //script-for-fade-out -->
+	
 	
 <head>
 	<title>Impilo Media Group | Impilo Magazine</title>
@@ -66,21 +19,32 @@
 	<!--// Meta tag Keywords -->
 	
 	<!-- for banner css files -->
-	<link rel="stylesheet" type="text/css" href="css/zoomslider.css" /><!--zoomslider css -->
-	<script type="text/javascript" src="js/modernizr-2.6.2.min.js"></script><!--modernizer css -->
+	<link href="css/zoomslider.css" rel="stylesheet">
+	
+	<!--zoomslider css -->
+	<script src="https://cdn.jsdelivr.net/npm/modernizr@3.13.1/lib/cli.min.js">
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js">
+</script>.
+	<!--modernizer css -->
 	<!-- //for banner css files -->
 	<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
 <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
 <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
 <link rel="manifest" href="/site.webmanifest">
 	<!-- For about -->	
-	<link rel="stylesheet" href="css/owl.carousel.css" type="text/css" media="all"/> <!-- Owl-Carousel-CSS -->
+	<link rel="stylesheet"
+	 href="css/owl.carousel.css" type="text/css" media="all"/>
+	 <!-- Owl-Carousel-CSS -->
 	<!-- //For about -->
-<link rel="stylesheet" href="css/owl.carousel.css" type="text/css" media="all"/>
 <link rel="stylesheet" href="css/houter.css" type="text/css" media="all"/>
 <link rel="stylesheet" href="css/swipebox.css" type="text/css" media="all"/>
-<link rel="stylesheet" href="css/jquery.flipster.css" type="text/css" media="all"/>
-<link rel="stylesheet" href="css/popuo-box.css" type="text/css" media="all"/>
+<script src="js/jquery.flexslider.js">
+</script>
+<link href="css/jquery.flipster.css" rel="stylesheet">
+<script src="js/jquery.flipster.js"></script>
+<script src="js/jquery-2.2.3.min.js"></script>
+
 <link rel="stylesheet" href="css/galleryeffect.css" type="text/css" media="all"/>
 <link rel="stylesheet" href="css/chocolat.css" type="text/css" media="all"/>
 <!-- pop up box -->
@@ -91,11 +55,11 @@
 	 <!-- Bootstrap-Core-CSS -->
 	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
 	<link rel="stylesheet" href="css/style.css" type="text/css" media="all" /> <!-- Style-CSS --> 
-	<link rel="stylesheet" href="css/fontawesome-all.css"> <!-- Font-Awesome-Icons-CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" /> <!-- Font-Awesome-Icons-CSS -->
 	<!-- //css files -->
 	
 	<!-- services flexslider  stylesheet-->
-	<link rel="stylesheet" href="css/flexslider.css" type="text/css" media="screen" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flexslider/2.7.2/flexslider.min.css" integrity="sha512-c7jR/kCnu09ZrAKsWXsI/x9HCO9kkpHw4Ftqhofqs+I2hNxalK5RGwo/IAhW3iqCHIw55wBSSCFlm8JP0sw2Zw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 	<!-- //services flexslider  stylesheet -->
 
 	<!-- web-fonts -->
@@ -103,6 +67,13 @@
 	<link href="//fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i&amp;subset=cyrillic,cyrillic-ext,greek,greek-ext,latin-ext,vietnamese" rel="stylesheet">
 	<!-- //web-fonts -->
 	<button class=" btn magazine desktop open-datepicker-popup justify-content-start" href="/mag" title="Magazine">Magazines</button>
+	<script src="jquery.js"></script> 
+    <script> 
+    $(function(){
+      $("#privacy").load("./privacy-policy.html"); 
+    });
+    </script> 
+	<div id="privacy" style="display:none;"></div>
 </head>
 
 <body>
@@ -158,9 +129,7 @@
 
 
 <!--/main-header-->
-<div id="demo-1" data-zs-src='["images/impress.jpg",
- "images/b1.jpeg", "images/content.jpg", "images/alice.jpg",
-  "images/self.jpg","images/xpress.jpg"]' data-zs-overlay="dots">
+<div id="demo-1" data-zs-src='["images/impress.jpg", "images/b1.jpeg", "images/content.jpg", "images/alice.jpg", "images/self.jpg","images/xpress.jpg"]' data-zs-overlay="dots">
 	<div class="demo-inner-content">
 		
 			
@@ -691,7 +660,7 @@
 
 <!-- copyright -->
 <div class="wthree_copy_right py-4">
-	<p>&copy; 2018 Impilo Media Group All rights reserved</p>
+	<p>&copy; 2025 Impilo Media Group All rights reserved</p>
 </div>
 <!-- //copyright -->
 
